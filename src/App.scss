@@ -1,0 +1,60 @@
+// initial variables
+$section-padding: 1.5rem;
+
+@import "~bulma/bulma.sass";
+
+.App {
+  text-align: center;
+}
+
+#searchForm {
+  .input {
+    min-width: 250px;
+  }
+}
+
+#loaderBlock {
+  .result-loader {
+    animation: App-logo-spin infinite 20s linear;
+    height: 20vmin;
+    pointer-events: none;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.notification {
+  display: inline-block;
+  width: 50%;
+}
+
+#moviesResult {
+    .movie-block {
+      border: 10px solid white;
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px#888;
+      box-shadow: 0 0 5px #888;
+      
+      @include mobile {
+        margin: 0 auto;
+      }
+
+      img {
+        height: 250px;
+      }
+
+      figcaption {
+        text-align: center;
+        margin-top: 8px;
+      }
+
+    }
+
+}
